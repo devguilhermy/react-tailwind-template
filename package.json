@@ -1,19 +1,19 @@
 {
     "name": "react-tailwind-template",
     "version": "0.1.0",
-    "private": true,
+    "private": false,
     "dependencies": {
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "tailwindcss": "^2.2.19"
     },
     "devDependencies": {
-        "react-scripts": "4.0.3",
         "@types/react": "^17.0.37",
         "@types/react-dom": "^17.0.11",
         "autoprefixer": "^10.4.0",
         "postcss": "^8.4.1",
         "postcss-cli": "^9.0.2",
+        "react-scripts": "^4.0.3",
         "typescript": "^4.1.2"
     },
     "scripts": {
@@ -48,8 +48,13 @@
         "type": "git",
         "url": "git+https://github.com/devguilhermy/react-tailwind-template.git"
     },
-    "keywords": [],
-    "author": "",
+    "keywords": [
+        "react",
+        "reactjs",
+        "tailwindcss",
+        "template"
+    ],
+    "author": "devguilhermy",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/devguilhermy/react-tailwind-template/issues"
