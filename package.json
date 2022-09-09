@@ -1,42 +1,46 @@
 {
-    "name": "react-tailwind-template",
-    "version": "0.1.0",
-    "private": false,
-    "dependencies": {
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2"
-    },
-    "devDependencies": {
-        "@types/react": "^17.0.37",
-        "@types/react-dom": "^17.0.11",
-        "react-scripts": "^5.0.1",
-        "tailwindcss": "^3.0.24",
-        "typescript": "^4.1.2"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "build-css": "npx tailwindcss -i ./src/css/tailwind-input.css -o ./src/css/tailwind-output.css",
-        "watch-css": "npx tailwindcss -i ./src/css/tailwind-input.css -o ./src/css/tailwind-output.css --watch"
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
-        ]
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    }
+	"name": "react-tailwind-template",
+	"version": "0.1.0",
+	"private": false,
+	"dependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.37",
+		"@types/react-dom": "^17.0.11",
+		"@vitejs/plugin-react": "^2.1.0",
+		"autoprefixer": "^10.4.8",
+		"postcss": "^8.4.16",
+		"tailwindcss": "^3.0.24",
+		"typescript": "^4.1.2",
+		"vite": "^3.1.0",
+		"vite-tsconfig-paths": "^3.5.0"
+	},
+	"scripts": {
+		"dev": "vite",
+		"start": "vite",
+		"build": "tsc && vite build",
+		"serve": "vite preview",
+		"build:css": "npx tailwindcss -i ./src/styles/tailwind-input.css -o ./src/styles/tailwind-output.css",
+		"watch:css": "npx tailwindcss -i ./src/styles/tailwind-input.css -o ./src/styles/tailwind-output.css --watch"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
 }
